@@ -1,0 +1,98 @@
+@charset /* Reset defaults (no need to edit)*/ "utf-8";html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-family:inherit;vertical-align:baseline}:focus{outline:0}ol,ul,li{list-style-type:none}table{border-collapse:separate;border-spacing:0}caption,th,td{text-align:left;font-weight:400}
+
+html {
+	font-size: 100%;
+}
+
+@font-face {
+	font-family: QuickSandBook;
+	src: url('../fonts/quicksand_book.otf');
+}
+
+body {	font-family: Arial, Helvetica, sans-serif;
+		font-size: .875em;
+	    line-height: 1.6em;
+		color: #666;
+}
+
+#container {
+	font-size: 1em;
+	width:100%;
+	background: #FFF;
+	padding: 15px 20px;
+	margin: auto;
+	clear: both
+}
+
+.header {
+	font-family:"QuicksandBook", Tahoma, Verdana, Arial, sans-serif;
+	font-size: 10px;
+	width: 100%;
+    height: 300px;
+	padding: 40px 20px 30px;
+	margin: 0 auto;
+	border-radius: 0;
+	background: #fbd601;
+	position: relative;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+}
+
+h1, h2, h3, h4 { font-family: "QuicksandBook", Arial, sans-serif} 
+
+h1 {font-size: 34px;  padding: 0 0 20px; color: #000 }
+
+h2, h3 {margin: 10px 0; color: #000; font-weight: normal; text-transform:normal}
+
+h2 {font-size: 2em}
+
+h3 {font-size: 2em}
+
+h4 {font-size: 1.2em; font-weight: 700}
+
+p {
+	padding: 10px 0;
+	font-size: 1em;
+}
+
+small {font-family: Georgia, "Times New Roman", Times, serif; color: #999}
+
+strong {font-weight: bold; font-size: 1.2em}
+
+em {font-style: italic;}
+
+a {color: #2997AB; text-decoration: none}
+
+#container ul li {list-style:none; }
+#container ol li {list-style:none; }
+
+button {
+	width: 140px;
+	height: 26px;
+	margin: 5px 5px 5px 5px;
+}
+
+input {
+	margin-left: 15px;
+	margin-right: 10px;
+	vertical-align: text-top;
+}
+
+div.stelling {
+	border: solid 1px black;
+	padding: 10px;
+	margin-bottom: 20px;
+
+}
+
+div.stelling h2 {
+	margin-left: 10px;
+	line-height: 40px;
+
+}
+
+div.stelling label {
+	margin-left: 10px;
+	margin-bottom: 30px;
+	vertical-align: middle;
+}

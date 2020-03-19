@@ -1,0 +1,85 @@
+{
+ "vragen" : [ {
+         "index":1,
+         "categorie": 1,
+               "stelling": "In welk jaar is Javascript voor het eerst verschenen?",
+               "antwoorden":[ "1992", "1995", "1997", "1999" ],
+               "afbeelding": "",
+               "code": ""
+              }
+              ,{
+               "index":2,
+         "categorie": 1,
+               "stelling": "Wie heeft Javascript ontworpen?",
+               "antwoorden":[ "Nolan Bushnell", "Steve Wozniak", "Brendan Eich", "Alan Turing" ],
+               "afbeelding": "",
+               "code": ""
+              }
+              ,{
+               "index":3,
+         "categorie": 1,
+               "stelling": "Welke van de onderstaande uitspraken is waar?",
+               "antwoorden":[ "Javascript is een clientside scripttaal.", "Javascript is een serverside scripttaal.", "Javascript is een esoterische scripttaal.", "Javascript is een serverside opmaaktaal." ],
+               "afbeelding": "",
+               "code": ""
+              }
+          ,{
+         "index":4,
+         "categorie": 2,
+               "stelling": "Welke van de onderstaande talen lijkt het meeste op Javascript.",
+               "antwoorden":[ "Assembler", "Actionscript", "Python", "Java" ],
+               "afbeelding": "",
+               "code": ""
+              }
+          ,{
+           "index":5,
+         "categorie": 2,
+               "stelling": "Bekijk het onderstaande script en beantwoord daarna de vraag.\nWelke van de onderstaande uitspraken is waar?",
+               "antwoorden":[ "De tekst &quot;Hallo&#34; wordt zichtbaar in de pop-up.\nDe tekst &#34;Hoi&#34; wordt zichtbaar in de console.\nDe tekst &#34;Hey&#34; wordt zichtbaar in de browser.",
+                              "De tekst &#34;Hallo&#34; wordt zichtbaar in de browser.\nDe tekst &#34;Hoi&#34; wordt zichtbaar in de console.\nDe tekst &#34;Hey&#34; wordt zichtbaar in de pop-up.",
+                              "De tekst &#34;Hallo&#34; wordt zichtbaar in de console.\nDe tekst &#34;Hoi&#34; wordt zichtbaar in de browser.\nDe tekst &#34;Hey&#34; wordt zichtbaar in de pop-up.",
+                              "De tekst &#34;Hallo&#34; wordt zichtbaar in de console.\nDe tekst &#34;Hoi&#34; wordt zichtbaar in de pop-up.\nDe tekst &#34;Hey&#34; wordt zichtbaar in de browser." ],
+               "afbeelding": "",
+               "code": "document.write(&#34;Hallo&#34;);\nconsole.log(&#34;Hoi&#34;);\nalert(&#34;Hey&#34;);"
+              }
+              ,{
+               "index":6,
+         "categorie": 2,
+               "stelling": "",
+               "antwoorden":[ "Henk", "Karel", "&#34;Henk&#34;", "&#34;Karel&#34;" ],
+               "afbeelding": "",
+               "code": "var naam = &#34;Henk&#34;;\nnaam = &#34;Karel&#34;;"
+              }
+              ,{
+               "index":7,
+         "categorie": 2,
+               "stelling": "Welke van de onderstaande stellingen is juist?",
+               "antwoorden":[ "Een string is een (geheel) getal,een boolean is een stukje tekst en een integer is true of false.", "Een string is een (geheel) getal,een integer is een stukje tekst en een boolean is true of false.", "Een integer is een (geheel) getal,een boolean is een stukje tekst en een string is true of false.", "Een integer is een (geheel) getal, een string is een stukje tekst en een boolean is true of false." ],
+               "afbeelding": "",
+               "code": ""
+              }
+              ,{
+               "index":8,
+         "categorie": 3,
+               "stelling": "Bekijk de onderstaande afbeelding en beantwoord daarna de vraag.\nWat is het juiste antwoord?",
+               "antwoorden":[ "23", "24", "25", "27" ],
+               "afbeelding": "equation.png",
+               "code": ""
+              }
+              ,{
+               "index":9,
+         "categorie": 1,
+               "stelling": "Wat kan je met Javascript?",
+               "antwoorden":[ "Pagina dynamisch maken, formulier valideren, interactiviteit toevoegen, spel maken.", "Hacken, DDOS aanval uitvoeren, database manipulatie, Bedreigde diersoorten redden.", "Hacken, database manipulatie, naar olie boren.", "Pagina dynamisch maken, formulier valideren, massavernietigingswapens maken." ],
+               "afbeelding": "",
+               "code": ""
+              }
+              ,{
+               "index":10,
+         "categorie": 1,
+               "stelling": "Welke van de onderstaande voorbeelden zijn geen bestaande programmeertaal?",
+               "antwoorden":[ "Brainfuck, A, Cobol, C--", "Lisp, C#, Prolog, C", "P-cake, CocaCode, TwixDB", "Tcl/Tk, Tea, Lingo" ],
+               "afbeelding": "",
+               "code": ""
+              }
+ ]}

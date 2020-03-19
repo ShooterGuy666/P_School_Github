@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #94CB19;
+}
+
+.titel{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 1%;
+}
+
+#computer_keuze{
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 1%;
+}
+
+#resultaat{
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 50px;
+    margin-top: 2%;
+}
+
+#speler_keuze{
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 1%;
+}
+
+.knoppen_selectie{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.knop{
+    height: 50px;
+    width: 200px;
+    background-color: #cdcdcd;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.knop:active{
+    background-color: #008800;
+}
+
+.knop_titel{
+    line-height: 50px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
