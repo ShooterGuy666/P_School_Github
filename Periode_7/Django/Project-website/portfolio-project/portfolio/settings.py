@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'werken.apps.WerkenConfig',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -115,14 +116,13 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.0/howto/static-files/
+# https://docs.djangoproject.com/en/2.2/howto/static-files/
+STATICFILES_DIRS =[
+        os.path.join(BASE_DIR, 'portfolio/static/')
+    ]
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
-# Laadt het bestand local_settings.py indien aanwezig.
-# Daarmee kun je lokaal settings overrulen.
-# Dit blok moet helemaal onderaan in settings.py staan.
-try:
-    from .local_settings import *
-except ImportError:
-    pass
+_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
