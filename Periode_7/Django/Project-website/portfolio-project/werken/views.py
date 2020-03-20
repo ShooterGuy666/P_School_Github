@@ -22,17 +22,17 @@ def create(request):
             werk.title = request.POST['title']
             werk.body = request.POST['body']
 
-        if request.POST['url'].startswith('http://') or request.POST['url'].startswith('https://'):
-            werkt.url=request.POST['url']
+            if request.POST['url'].startswith('http://') or request.POST['url'].startswith('https://'):
+                werk.url = request.POST['url']
+            else:
+                werk.url = 'http://' + request.POST['url']
+                werk.icon = request.FILES['icon']
+                werk.image = request.FILES['image']
+                werk.pub_date = timezone.datetime.now()
+                werk.hunter = request.user
+                werk.save()
+                return redirect('/werken/' + str(werk.id))
         else:
-            werk.url= 'http://' + request.POST['url']
-            werk.icon = request.FILES['icon']
-            werk.image = request.FILES['image']
-            werk.pub_date = timezone.datetime.now()
-            werk.hunter = request.user
-            werk.save()
-        return redirect('/werken/' + str(werk.id))
+            return render(request, 'werken/toevoegen.html', {'error': 'niet alle velden zijn ingevuld.'})
     else:
-        return render(request, 'werken/toevoegen.html', {'error':'niet alle velden zijn ingevuld.'}) 
-else:
-    return render(request, 'werken/toevoegen.html')
+        return render(request, 'werken/toevoegen.html')
