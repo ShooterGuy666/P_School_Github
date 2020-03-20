@@ -31,9 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    'accounts.apps.AccountsConfig', # Toevoegen
     'werken.apps.WerkenConfig',
-    'django.contrib.auth',
+
+    'django.contrib.admin',
+    'django.contrib.auth', # autorisatie van gebruikers (standaard)
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -126,3 +128,6 @@ STATIC_URL = '/static/'
 
 _ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
