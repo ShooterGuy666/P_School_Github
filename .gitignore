@@ -10,3 +10,18 @@
 pyvenv.cfg
 .venv
 pip-selfcheck.json
+
+# laravel
+# https://github.com/laravel/laravel/blob/master/.gitignore
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
