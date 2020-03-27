@@ -1,0 +1,3 @@
+Publish post status command.
+used in older video. dissapeared in newer video.
+@if ( $post->status == NULL) checked @endif

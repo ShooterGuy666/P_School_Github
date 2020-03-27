@@ -2,6 +2,13 @@
 
 @section('bg-img',asset('user/img/post-bg.jpg'))
 
+@section('head')
+
+<!--PrismJS Stylesheet-->
+<link rel="stylesheet" href="{{ asset('user/css/prism.css') }}">
+
+@endsection
+
 @section('title', $post->title)
 
 @section('sub-heading', $post->subtitle)
@@ -24,7 +31,7 @@
                   @foreach ($post->categories as $category)
                     <small class="float-right" style="margin-right: 20px;">
 
-                    {{ $category->name }}
+                    <a href="">{{ $category->name }}</a>
 
                     </small>
                   @endforeach
@@ -38,7 +45,7 @@
                     <small class="float-left" style="margin-right: 20px;border-radius: 5px; border: 1px solid gray;
                     padding: 5px;">
 
-                    {{ $tag->name }}
+                   <a href="">{{ $tag->name }}</a>
 
                     </small>
                   @endforeach
@@ -51,5 +58,12 @@
 </article>
 
 <hr>
+
+@section('footer')
+
+<!--PrismJS-->
+<script src="{{ asset('user/js/prism.js') }}"></script>
+
+@endsection
 
 @endsection

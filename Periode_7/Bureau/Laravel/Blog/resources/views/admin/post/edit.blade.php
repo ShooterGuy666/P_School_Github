@@ -163,7 +163,7 @@
 @section('footerSection')
 
 <!-- CKeditor -->
-<script src="{{ asset('//cdn.ckeditor.com/4.14.0/full/ckeditor.js') }}"></script>
+<script src="{{ asset('admin/ckeditor/ckeditor.js') }}"></script>
 
 <script>
   $(function() {
