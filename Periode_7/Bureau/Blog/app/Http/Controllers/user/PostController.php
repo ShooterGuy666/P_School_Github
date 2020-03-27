@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Http\Controllers\user;
+
+use App\Http\Controllers\Controller;
+use App\Model\user\post;
+use Illuminate\Http\Request;
+
+class PostController extends Controller
+{
+    
+    public function post(post $post)
+
+    {
+
+        return view('user.post', compact('post'));
+
+    }
+
+}
