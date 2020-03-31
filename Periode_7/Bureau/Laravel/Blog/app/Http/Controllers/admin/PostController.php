@@ -46,10 +46,16 @@ class PostController extends Controller
             'title'=>'required',
             'subtitle'=>'required',
             'slug'=>'required',
-            'body'=>'required'
+            'body'=>'required',
+            'image'=>'required',
         ]);
+        
+        if ($request->hasFile('image')) {
+            $ImageName = $request->image->store('public');
+        }
 
         $post = new post;
+        $post->image = $ImageName;
         $post->title = $request->title;
         $post->subtitle = $request->subtitle;
         $post->slug = $request->slug;
@@ -101,21 +107,16 @@ class PostController extends Controller
             'title'=>'required',
             'subtitle'=>'required',
             'slug'=>'required',
-            'body'=>'required'
+            'body'=>'required',
+            'image'=>'required'
         ]);
 
-        if($request->hasFile('image')) {
-
-            return 'yes';
-            $request->image->store('public');
-        
-        }else{
-
-            return 'no';
-
+        if ($request->hasFile('image')) {
+            $ImageName = $request->image->store('public');
         }
 
         $post = post::find($id);
+        $post->image = $ImageName;
         $post->title = $request->title;
         $post->subtitle = $request->subtitle;
         $post->slug = $request->slug;

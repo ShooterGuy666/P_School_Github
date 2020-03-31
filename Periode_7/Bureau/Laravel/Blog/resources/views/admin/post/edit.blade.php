@@ -39,7 +39,7 @@
                 @include('includes.messages')
               <!-- /.card-header -->
               <!-- form start -->
-              <form role="form" action="{{ route('post.update', $post->id) }}" method="post" enctype="multipart\form-data">
+              <form role="form" action="{{ route('post.update', $post->id) }}" method="post" enctype="multipart/form-data">
 
                 @csrf
                 @method('patch')
@@ -61,18 +61,23 @@
                     </div>
                   </div>
                   <div class="col-lg-6">
-                    <div class="form-group">
-                      <div class="float-right">
-                        <label for="image">File input</label>
-                        <input name= "image "type="file" id="image">
+                  <div class="form-group">
+                    <div class="float-right">
+                      <label for="image">File input</label>
+                        <div class="input-group">
+                          <div class="custom-file">
+                            <input name="image" type="file" class="custom-file-input" id="image">
+                          <label class="custom-file-label" for="image">Choose file</label>
+                        </div>
+                      </div>
+                    </div>
                 </div>
-                <div class="form-check float-left" style="margin-top:33px">
+              <div class="form-check float-left" style="margin-top:33px">
                     <label class="form-check-label"></label>
                     <input type="checkbox" class="form-check-input" name="status" value="1" @if ($post->status == 1)
                       {{ 'checked' }}
                     @endif>Publish                    
                   </div>
-              </div>
 
                   <br>
                   <div class="form-group" style="margin-top:46px;">
@@ -178,6 +183,16 @@
     });
   });
 
+</script>
+
+<!--bootstrap file input inner text-->
+
+<script>
+document.querySelector('.custom-file-input').addEventListener('change',function(e){
+  var fileName = document.getElementById("image").files[0].name;
+  var nextSibling = e.target.nextElementSibling
+  nextSibling.innerText = fileName
+})
 </script>
 
 @endsection
