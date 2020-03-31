@@ -50,4 +50,8 @@ composer.phar
 # End of https://www.gitignore.io/api/composer
 
 #raw files
-laravel\blog\raw_files
+\raw_files\
+
+#composer_laragon_files
+composer.json
+composer.lock
