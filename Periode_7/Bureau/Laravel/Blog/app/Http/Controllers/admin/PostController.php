@@ -104,6 +104,17 @@ class PostController extends Controller
             'body'=>'required'
         ]);
 
+        if($request->hasFile('image')) {
+
+            return 'yes';
+            $request->image->store('public');
+        
+        }else{
+
+            return 'no';
+
+        }
+
         $post = post::find($id);
         $post->title = $request->title;
         $post->subtitle = $request->subtitle;
