@@ -51,7 +51,3 @@ composer.phar
 
 #raw files
 \raw_files\
-
-#composer_laragon_files
-composer.json
-composer.lock
